@@ -1,4 +1,4 @@
-const API_URL="http://127.0.0.1:8000"
+const API_URL="https://task-manager-ll6x.onrender.com"
 
 function showMessage(id,text,type){
     const msg=document.getElementById(id)
