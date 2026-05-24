@@ -76,12 +76,11 @@ Open frontend/index.html with Live Server in VS Code
 | PUT | /tasks/{id} | Update task |
 | DELETE | /tasks/{id} | Delete task |
 
-## Deployment
-
-This app is deployed on Render.
-- Backend API: https://your-app.onrender.com
-- API Docs: https://your-app.onrender.com/docs
+## Live Demo
+- Frontend: https://task-manager-frontend-s9y2.onrender.com
+- Backend API: https://task-manager-ll6x.onrender.com
+- API Docs: https://task-manager-ll6x.onrender.com/docs
 
 ## Author
 
-Sivaraj - Python Developer Internship Assessment
+Sivaraj kumar
