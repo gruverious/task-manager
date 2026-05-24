@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Task Manager</h2>
+        <div class="navbar-right">
+            <span id="welcome-text"></span>
+            <button class="btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <div class="create-task-box">
+            <h3>Create New Task</h3>
+
+            <div class="form-group" >
+                <label>Title</label>
+                <input type="text" id="task-title" placeholder="Enter task title">
+            </div>
+
+            <div class="form-group">
+                <label>Description (optional)</label>
+                <textarea id="task-description" placeholder="Enter task description"></textarea>
+            </div>
+
+            <button class="btn-primary" onclick="createTask()">Add Task</button>
+
+            <div id="message" class="message"></div>
+        </div>
+
+        <div class="tasks-box">
+            <h3>My Tasks</h3>
+
+            <div id="task-list"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
