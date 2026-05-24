@@ -25,7 +25,10 @@ task-manager/
 │   ├── schemas.py
 │   ├── auth.py
 │   ├── database.py
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── routers/
+│       ├── auth_routes.py
+│       └── task_routes.py
 ├── frontend/
 │   ├── index.html
 │   ├── register.html
@@ -72,13 +75,15 @@ Open frontend/index.html with Live Server in VS Code
 | POST | /login | Login and get JWT token |
 | POST | /tasks | Create a task |
 | GET | /tasks | Get all tasks |
+| GET | /tasks?completed=true | Get only completed tasks |
+| GET | /tasks?completed=false | Get only incomplete tasks |
+| GET | /tasks?page=1&limit=10 | Get paginated tasks |
 | GET | /tasks/{id} | Get single task |
 | PUT | /tasks/{id} | Update task |
 | DELETE | /tasks/{id} | Delete task |
 
 ## Live Demo
 - Frontend: https://task-manager-frontend-s9y2.onrender.com
-- Backend API: https://task-manager-ll6x.onrender.com
 - API Docs: https://task-manager-ll6x.onrender.com/docs
 
 ## Author
